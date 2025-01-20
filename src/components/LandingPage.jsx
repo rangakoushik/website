@@ -94,8 +94,8 @@ const LandingPage = () => {
 </nav>
       <div className="flex justify-center py-4">
         <div className="flex items-center space-x-2 px-4 py-1 rounded-full bg-pink-50 border border-pink-200">
-          <span className="text-sm text-pink-600">New feature</span>
-          <span className="text-sm text-gray-600">Check out the team dashboard →</span>
+          <span className="text-sm text-red-600">New feature</span>
+          <span className="text-sm text-red-600">Check out the team dashboard →</span>
         </div>
       </div>
       <div className="max-w-4xl mx-auto px-4 py-12 text-center">
@@ -428,9 +428,6 @@ const LandingPage = () => {
 </div>
       <footer className="max-w-6xl mx-auto py-12 px-4">
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
-          <div className="col-span-2">
-          <img src={ZYSK} alt="ZYSK Logo" className="h-8" />
-          </div>
           
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
@@ -479,18 +476,35 @@ const LandingPage = () => {
               <li>Ecommerce</li>
             </ul>
           </div>
+          <div>
+            <h3 className="font-semibold mb-4">Social</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li>Twitter</li>
+              <li>Linkedin</li>
+              <li>Facebook</li>
+              <li>GitHub</li>
+              <li>AngelList</li>
+              <li>Dribbble</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li>Terms</li>
+              <li>Privacy</li>
+              <li>Cookies</li>
+              <li>Licences</li>
+              <li>Settings</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t">
-          <div className="text-gray-600">© 2077 zysktechnologies. All rights reserved.</div>
-          <div className="flex space-x-6 text-gray-600">
-            <span>Terms</span>
-            <span>Privacy</span>
-            <span>Cookies</span>
-            <span>Licenses</span>
-            <span>Settings</span>
-            <span>Contact</span>
+        <div className="col-span-2">
+          <img src={ZYSK} alt="ZYSK Logo" className="h-8" />
           </div>
+          <div className="text-gray-600">© 2077 zysktechnologies. All rights reserved.</div>
         </div>
       </footer>
     </div>
